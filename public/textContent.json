@@ -1,0 +1,43 @@
+{
+  "JobSection": [
+    {
+      "backgroundImage": "",
+      "title": "Poodle Docs",
+      "subTitle": "The dog the,ed Google Docs clone you never knew you needed.",
+      "info": "This project demonstrates real time synchronisation, rich text 
+      editing, user management systems and is made using the modern tech stack 
+      including React19, NextJS15, Tailwind, real-time database via Convex, 
+      authentication via Clerk and text editing via TipTap.",
+      "moreInfo": "This fully functional Google Docs clone allows multiple 
+        users to collaboratively edit a document simultaneously and tag each 
+        other in comments. Everything is saved automatically to the database. 
+        There is a built in notificaiton system that allows 
+        users to interact with comments with their tag from multiple documents 
+        at once. Users can chose from various preformatted templates or create 
+        a blank document. The text editor itself contains all the features you 
+        would expect including image editing, margin adjustment and table 
+        insertion. Users can export their documents in PDF, HTML, JSON or text 
+        formats. The account management system handles both personal and
+        organisation profiles allowing users from the same organisation to 
+        collaborate together. Users will be able to switch between accounts and 
+        be able to invite others to their organisation.",
+      "buttonText": ["View Site", "View Repository"]
+    },
+    {
+      "backgroundImage": "",
+      "title": "OpenFlix",
+      "subTitle": "The Netflix clone full of amazing open source video content.",
+      "info": "React, Next.JS, Tailwind, Prisma, MongoDB, and NextAuth.",
+      "moreInfo": "",
+      "buttonText": ""
+    }
+    {
+      "backgroundImage": "",
+      "title": "",
+      "subTitle": "",
+      "info": "",
+      "moreInfo": "",
+      "buttonText": ""
+    }
+  ]
+}
