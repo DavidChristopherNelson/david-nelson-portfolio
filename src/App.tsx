@@ -1,4 +1,5 @@
 import './App.css'
+import GitHubActivity from './components/github-activity';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
         <p>US and Australian Citizen</p>
         <p>hello@davidnelson.bio</p>
       </div>
+      <GitHubActivity />
     </>
   )
 }
