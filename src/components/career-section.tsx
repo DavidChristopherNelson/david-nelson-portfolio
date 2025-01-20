@@ -1,7 +1,21 @@
+import { FadingGradientCareerSectionTitle } from "./ui/FadingGradientCareerSectionTitle";
+
 function CareerSection () {
   return (
-    <div>
-
+    <div
+      style={{
+        position: "relative",
+        height: "6em",
+      }}
+    >
+      <FadingGradientCareerSectionTitle />
+      <FadingGradientCareerSectionTitle />
+      <FadingGradientCareerSectionTitle />
+      <FadingGradientCareerSectionTitle />
+      <FadingGradientCareerSectionTitle />
+      <FadingGradientCareerSectionTitle />
+      <FadingGradientCareerSectionTitle />
+      <FadingGradientCareerSectionTitle />
     </div>
   );
 };

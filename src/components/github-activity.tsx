@@ -11,12 +11,14 @@ function GitHubActivity() {
       >
         <h2>My GitHub Activity</h2>
       </a>
-      <GitHubCalendar
-        username="DavidChristopherNelson"
-        blockSize={15}
-        blockMargin={5}
-        fontSize={16}
-      />
+      <div className="flex justify-center">
+        <GitHubCalendar
+          username="DavidChristopherNelson"
+          blockSize={15}
+          blockMargin={5}
+          fontSize={16}
+        />  
+      </div>
     </div>
   );
 }

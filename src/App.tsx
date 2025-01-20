@@ -5,6 +5,8 @@ import { FadingGradientBackgroundButton } from './components/ui/FadingGradientBa
 import profilePicture from './assets/profile-picture-8.png';
 import { FadingGradientEye } from './components/ui/FadingGradientEye';
 import { FadingGradientSplash } from './components/ui/FadingGradientSplash';
+import CareerSection from './components/career-section';
+import { JobSection } from './components/job-section';
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
           <FadingGradientEye />
           <FadingGradientEye />
           <FadingGradientEye />
+          
           <FadingGradientSplash />
           <FadingGradientSplash />
           <FadingGradientSplash />
@@ -71,6 +74,8 @@ function App() {
           </p>
         </div>
       </div>
+      <CareerSection />
+      <JobSection />
       <GitHubActivity />
       <div>
         <FadingGradientBackgroundButton variant="default" size="lg">

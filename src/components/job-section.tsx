@@ -1,3 +1,5 @@
+import GitHubActivity from "./github-activity";
+
 interface JobSectionProps {
   backgroundImage?: string;
   title: string;
@@ -7,6 +9,26 @@ interface JobSectionProps {
   buttonText?: string[];
 }
 
+export const JobSection = () => 
+{
+  return (
+    <>
+      <div className="w-full border-t-4 border-teal-500">
+        <div className="border-l-4 border-b-4 border-teal-500 text-lg text-white p-2 text-left w-min whitespace-nowrap">
+          GitHub Activity
+        </div>
+        <GitHubActivity />
+      </div>
+      <div className="w-full border-t-4 border-teal-500">
+        <div className="ml-auto border-r-4 border-b-4 border-teal-500 text-lg text-white p-2 text-right w-min whitespace-nowrap">
+          Poodle Docs
+        </div>
+        <GitHubActivity />
+      </div>
+    </>
+  )
+
+/*
 export const JobSection = ({ 
   backgroundImage,
   title,
@@ -45,4 +67,5 @@ export const JobSection = ({
       </div>
     </div>
   );
+*/
 };
