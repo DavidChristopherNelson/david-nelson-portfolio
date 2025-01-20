@@ -28,7 +28,7 @@ export const FadingGradientTextButton = React.forwardRef<
     buttonRef.current.style.backgroundImage = `
       radial-gradient(ellipse at ${randX}% ${randY}%, 
         ${color},
-        white
+        rgba(255, 255, 255, 0)
       )
     `
 
