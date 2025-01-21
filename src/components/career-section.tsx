@@ -5,7 +5,7 @@ function CareerSection () {
     <div
       style={{
         position: "relative",
-        height: "6em",
+        height: "24em",
       }}
     >
       <FadingGradientCareerSectionTitle />

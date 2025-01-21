@@ -60,18 +60,17 @@ export function FadingGradientCareerSectionTitle() {
       ref={divRef}
       style={{
         position: "absolute",
-        left: "50%", // Move the left edge to the center of the parent
-        transform: "translateX(-50%)", // Adjust the element's center to align with the parent's center
+        left: "50%",
+        top: "50%",
+        transform: "translate(-50%, -50%)",
         fontSize: "5rem",
         fontFamily: 'Consolas, "Menlo", "Courier New", monospace',
-        // Make sure the background is transparent initially
+        fontWeight: 900,
         backgroundColor: "transparent",
-        // Force the text color to be transparent, so background clip shows through
         color: "transparent",
         WebkitBackgroundClip: "text",
         backgroundClip: "text",
         WebkitTextFillColor: "transparent",
-        // Optional styling to ensure text fits or is visible
         overflow: "hidden",
       }}
     >

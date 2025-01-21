@@ -7,9 +7,32 @@ import { FadingGradientEye } from './components/ui/FadingGradientEye';
 import { FadingGradientSplash } from './components/ui/FadingGradientSplash';
 import CareerSection from './components/career-section';
 import { JobSection } from './components/job-section';
+import BarChart from './components/ui/BarChart';
 
 
 function App() {
+  const chartData = [
+    { label: "React", value: 4 },
+    { label: "Tailwind", value: 3 },
+    { label: "TS", value: 3 },
+    { label: "NextJS", value: 2 },
+    { label: "Vercel", value: 2 },
+    { label: "Python", value: 2 },
+    { label: "Ruby", value: 2 },
+    { label: "Kotlin", value: 1 },
+    { label: "MongoDB", value: 1 },
+    { label: "JS", value: 1 },
+    { label: "PostgreSQL", value: 1 },
+    { label: "Rails", value: 1 },
+    { label: "Liveblocks", value: 1 },
+    { label: "Convex", value: 1 },
+    { label: "Prisma", value: 1 },
+    { label: "NextAuth", value: 1 },
+    { label: "TipTap", value: 1 },
+    { label: "Shadcn", value: 1 },
+    { label: "Clerk", value: 1 },
+    { label: "Applescript", value: 1 }
+  ];
 
   return (
     <>
@@ -68,15 +91,29 @@ function App() {
           <p
             className="text-2xl"
           >
-            Software Engineer / Entrepreneur / Chemical Engineer<br />
+            Software Developer / Entrepreneur / Engineer <br />
             US and Australian Citizen<br />
             hello@davidnelson.bio
           </p>
         </div>
       </div>
       <CareerSection />
-      <JobSection />
+      <div style={{position: "relative", width: "2000px", height: "24em"}}>
+        <BarChart data={chartData} />
+        <div
+          style={{
+            position: "absolute",
+            top: -15,
+            left: 0,
+            width: "100vw",
+            height: "100%",
+            background: "linear-gradient(to right, transparent, black)",
+            pointerEvents: "none", // Ensure the gradient doesn't block interaction with the BarChart
+          }}
+        ></div>
+      </div>
       <GitHubActivity />
+      <JobSection />
       <div>
         <FadingGradientBackgroundButton variant="default" size="lg">
           Cool Gradient BG!!
@@ -87,8 +124,25 @@ function App() {
           Gradient Text Button
         </FadingGradientTextButton>
       </div>
+      <div
+        style={{
+          backgroundColor: "#008080",
+          height: "100px",
+          width: "100px"
+        }}
+      >
+      </div>
+      <div
+        style={{
+          backgroundColor: "#ee2e31",
+          height: "100px",
+          width: "100px"
+        }}
+      >
+      </div>
     </>
   )
 }
 
 export default App
+// e6ac00 006666
