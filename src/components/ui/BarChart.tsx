@@ -1,6 +1,3 @@
-"use client"
-import React from 'react';
-
 type BarChartProps = {
   data: {
     label: string;
@@ -14,7 +11,6 @@ const BarChart: React.FC<BarChartProps> = ({ data }) => {
 
   // Decide how many tick marks you want on the y-axis. 
   // For example, 5 + 0 => 6 ticks total.
-  const TICK_COUNT = 5;
   const ticks = [1, 2, 3, 4];
 
 

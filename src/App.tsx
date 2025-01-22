@@ -8,6 +8,8 @@ import { FadingGradientSplash } from './components/ui/FadingGradientSplash';
 import CareerSection from './components/career-section';
 import { JobSection } from './components/job-section';
 import BarChart from './components/ui/BarChart';
+import CareerOverview from './components/ui/CareerOverview';
+import OverlappingDivs from './components/ui/OverlappingDivs';
 
 
 function App() {
@@ -98,7 +100,8 @@ function App() {
         </div>
       </div>
       <CareerSection />
-      <div style={{position: "relative", width: "2000px", height: "24em"}}>
+      <CareerOverview />
+      <div style={{position: "relative", width: "2000px", height: "24em", marginTop: "12em",}}>
         <BarChart data={chartData} />
         <div
           style={{
@@ -113,6 +116,28 @@ function App() {
         ></div>
       </div>
       <GitHubActivity />
+      <OverlappingDivs />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div
+        className="h-screen"
+      ></div>
+      <div
+        className="h-screen"
+      ></div>
       <JobSection />
       <div>
         <FadingGradientBackgroundButton variant="default" size="lg">

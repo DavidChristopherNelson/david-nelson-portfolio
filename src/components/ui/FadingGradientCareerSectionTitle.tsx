@@ -62,7 +62,7 @@ export function FadingGradientCareerSectionTitle() {
         position: "absolute",
         left: "50%",
         top: "50%",
-        transform: "translate(-50%, -50%)",
+        transform: "translate(-50%, -50%) scale(2, 5)",
         fontSize: "5rem",
         fontFamily: 'Consolas, "Menlo", "Courier New", monospace',
         fontWeight: 900,
@@ -74,7 +74,7 @@ export function FadingGradientCareerSectionTitle() {
         overflow: "hidden",
       }}
     >
-      Software Engineer
+      SOFTWAREDEVELOPER
     </div>
   );
 }
