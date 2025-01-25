@@ -3,11 +3,13 @@ import { useRef, useEffect } from "react";
 interface FadingBackgroundProps {
   className?: string;
   style?: React.CSSProperties;
+  text?: string;
 }
 
 const FadingBackground: React.FC<FadingBackgroundProps> = ({
   className = "top-0 left-0 w-full h-full",
   style,
+  text = ""
 }) => {
   const fadeTime = 8000;
   const divRef = useRef<HTMLDivElement | null>(null);
@@ -75,9 +77,12 @@ const FadingBackground: React.FC<FadingBackgroundProps> = ({
         className={`
           absolute
           ${className}
+          ${text !== "" ? "text-transparent bg-clip-text" : ""}
         `}
         style={style}
-      />
+      >
+        {text}
+      </div>
     </>
   );
 };

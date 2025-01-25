@@ -1,4 +1,4 @@
-import FadingBackgroundText from "./FadingBackgroundText";
+import FadingBackground from "./FadingBackground";
 
 function CareerOverview () {
   return (
@@ -8,7 +8,7 @@ function CareerOverview () {
         w-full
       "
     >
-      <FadingBackgroundText
+      <FadingBackground
         text="SOFTWAREDEVELOPER"
       />
     </div>
