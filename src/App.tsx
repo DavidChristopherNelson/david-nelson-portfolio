@@ -6,7 +6,14 @@ import TechStackBarChart from "./components/TechStackBarChart";
 
 const App = () => {
   return (
-    <>
+    <div
+      className="
+        flex
+        flex-col
+        justify-center
+        items-center
+      "
+    >
       <SplashPage />
       <Career />
         <CareerOverview />
@@ -15,7 +22,7 @@ const App = () => {
       <Career />
       <Career />
       <Career />
-    </>
+    </div>
   );
 };
 

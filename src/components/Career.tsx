@@ -1,6 +1,13 @@
 const Career = () => {
   return (
-    <div>
+    <div
+      className="
+        flex
+        justify-center
+        items-center
+        w-full
+      "
+    >
       Career
     </div>
   );
