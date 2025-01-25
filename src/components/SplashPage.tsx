@@ -49,8 +49,7 @@ const SplashPage = () => {
                 leading-[0.9]
               "
             >
-              David<br />
-              Nelson
+              David
             </h1>
             <h1 
               className="
