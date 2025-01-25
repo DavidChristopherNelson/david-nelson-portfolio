@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import profilePicture from '../assets/profile-picture-9.png';
+import profilePicture from '../assets/profile-picture.png';
 import FadingBackground from './FadingBackground';
 
 const SplashPage = () => {
@@ -49,7 +49,8 @@ const SplashPage = () => {
                 leading-[0.9]
               "
             >
-              David
+              David<br />
+              Nelson
             </h1>
             <h1 
               className="
@@ -72,16 +73,9 @@ const SplashPage = () => {
               hello@davidnelson.bio<br />
             </p>
           </div>
-          <FadingBackground />
-          <FadingBackground />
-          <FadingBackground />
-          <FadingBackground />
-          <FadingBackground />
-          <FadingBackground />
-          <FadingBackground />
-          <FadingBackground />
-          <FadingBackground />
-          <FadingBackground />
+          {Array(10).fill(0).map((_, i) => (
+            <FadingBackground key={i} />
+          ))}
         </div>
         <div className="relative">
           <img 
@@ -90,96 +84,18 @@ const SplashPage = () => {
             alt="Example Image" 
             className="my-container w-auto h-screen [max-width:none]"
           />
-          <FadingBackground
-            className=" "
-            style={{
-              top: `${Math.floor(0.20 * imgWidth)}px`,
-              right: `${Math.floor(0.33 * imgWidth)}px`,
-              width: `${Math.floor(0.2 * imgWidth)}px`,
-              height: `${Math.floor(0.5 * imgWidth)}px`,
-            }}
-          />
-          <FadingBackground
-            className=" "
-            style={{
-              top: `${Math.floor(0.20 * imgWidth)}px`,
-              right: `${Math.floor(0.33 * imgWidth)}px`,
-              width: `${Math.floor(0.2 * imgWidth)}px`,
-              height: `${Math.floor(0.5 * imgWidth)}px`,
-            }}
-          />
-          <FadingBackground
-            className=" "
-            style={{
-              top: `${Math.floor(0.20 * imgWidth)}px`,
-              right: `${Math.floor(0.33 * imgWidth)}px`,
-              width: `${Math.floor(0.2 * imgWidth)}px`,
-              height: `${Math.floor(0.5 * imgWidth)}px`,
-            }}
-          />
-          <FadingBackground
-            className=" "
-            style={{
-              top: `${Math.floor(0.20 * imgWidth)}px`,
-              right: `${Math.floor(0.33 * imgWidth)}px`,
-              width: `${Math.floor(0.2 * imgWidth)}px`,
-              height: `${Math.floor(0.5 * imgWidth)}px`,
-            }}
-          />
-          <FadingBackground
-            className=" "
-            style={{
-              top: `${Math.floor(0.20 * imgWidth)}px`,
-              right: `${Math.floor(0.33 * imgWidth)}px`,
-              width: `${Math.floor(0.2 * imgWidth)}px`,
-              height: `${Math.floor(0.5 * imgWidth)}px`,
-            }}
-          />
-          <FadingBackground
-            className=" "
-            style={{
-              top: `${Math.floor(0.20 * imgWidth)}px`,
-              right: `${Math.floor(0.33 * imgWidth)}px`,
-              width: `${Math.floor(0.2 * imgWidth)}px`,
-              height: `${Math.floor(0.5 * imgWidth)}px`,
-            }}
-          />
-          <FadingBackground
-            className=" "
-            style={{
-              top: `${Math.floor(0.20 * imgWidth)}px`,
-              right: `${Math.floor(0.33 * imgWidth)}px`,
-              width: `${Math.floor(0.2 * imgWidth)}px`,
-              height: `${Math.floor(0.5 * imgWidth)}px`,
-            }}
-          />
-          <FadingBackground
-            className=" "
-            style={{
-              top: `${Math.floor(0.20 * imgWidth)}px`,
-              right: `${Math.floor(0.33 * imgWidth)}px`,
-              width: `${Math.floor(0.2 * imgWidth)}px`,
-              height: `${Math.floor(0.5 * imgWidth)}px`,
-            }}
-          />
-          <FadingBackground
-            className=" "
-            style={{
-              top: `${Math.floor(0.20 * imgWidth)}px`,
-              right: `${Math.floor(0.33 * imgWidth)}px`,
-              width: `${Math.floor(0.2 * imgWidth)}px`,
-              height: `${Math.floor(0.5 * imgWidth)}px`,
-            }}
-          />
-          <FadingBackground
-            className=" "
-            style={{
-              top: `${Math.floor(0.20 * imgWidth)}px`,
-              right: `${Math.floor(0.33 * imgWidth)}px`,
-              width: `${Math.floor(0.2 * imgWidth)}px`,
-              height: `${Math.floor(0.5 * imgWidth)}px`,
-            }}
-          />
+          {Array(10).fill(0).map((_, i) => (          
+            <FadingBackground
+              key={i}
+              className=" "
+              style={{
+                top: `${Math.floor(0.20 * imgWidth)}px`,
+                right: `${Math.floor(0.33 * imgWidth)}px`,
+                width: `${Math.floor(0.2 * imgWidth)}px`,
+                height: `${Math.floor(0.5 * imgWidth)}px`,
+              }}
+            />
+          ))}
         </div>
       </div>
     </>
