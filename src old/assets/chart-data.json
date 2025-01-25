@@ -1,0 +1,22 @@
+[
+  { "label": "React", "value": 4 },
+  { "label": "Tailwind", "value": 3 },
+  { "label": "TS", "value": 3 },
+  { "label": "NextJS", "value": 2 },
+  { "label": "Vercel", "value": 2 },
+  { "label": "Python", "value": 2 },
+  { "label": "Ruby", "value": 2 },
+  { "label": "Kotlin", "value": 1 },
+  { "label": "MongoDB", "value": 1 },
+  { "label": "JS", "value": 1 },
+  { "label": "PostgreSQL", "value": 1 },
+  { "label": "Rails", "value": 1 },
+  { "label": "Liveblocks", "value": 1 },
+  { "label": "Convex", "value": 1 },
+  { "label": "Prisma", "value": 1 },
+  { "label": "NextAuth", "value": 1 },
+  { "label": "TipTap", "value": 1 },
+  { "label": "Shadcn", "value": 1 },
+  { "label": "Clerk", "value": 1 },
+  { "label": "Applescript", "value": 1 }
+]
