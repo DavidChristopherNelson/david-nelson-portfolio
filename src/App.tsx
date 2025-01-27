@@ -129,8 +129,8 @@ const App = () => {
         <ProjectLeft 
           heading="DeckNetwork: Junior Full Stack Developer"
           description="            
-            I worked at DecoNetwork for one year during which time I developed 
-            and load tested ErrorMaster an error management software.
+            I worked at DecoNetwork for one year, during which I developed and 
+            performed load testing on ErrorMaster, an error management tool.
           "
           buttons={[
             {
@@ -153,11 +153,11 @@ const App = () => {
         <Overview 
           textInfo={
             [
-              {type: TypographyType.Big, text: "1"}, 
-              {type: TypographyType.Double, text: "PHYSICS DEGREE"}, 
+              {type: TypographyType.Big, text: "2"}, 
+              {type: TypographyType.Double, text: "STEM DEGREES"}, 
               {type: TypographyType.Small, text: "and"},
               {type: TypographyType.Big, text: "1"},
-              {type: TypographyType.Double, text: "ENGINEERING DEGREE"},
+              {type: TypographyType.Double, text: "PUBLISHED PAPER"},
               {type: TypographyType.Small, text: "and"},
               {type: TypographyType.Big, text: "1"},
               {type: TypographyType.Double, text: "PROGRAMMING BOOTCAMP"}
@@ -202,6 +202,24 @@ const App = () => {
           imageInfo={{
             src: "/src/assets/launch-school.png",
             alt: "Launch School screenshot"
+          }}
+        />
+       <ProjectRight 
+          heading="Research Paper"
+          description="
+            As a paid research assistant at the University of Canterbury I
+            published a mechanical engineering paper on how to ensure everyone
+            is fed during a nuclear winter.
+          "
+          buttons={[
+            {
+              href: "https://www.mdpi.com/2673-8783/4/2/33",
+              text: "View Paper"
+            }
+          ]}
+          imageInfo={{
+            src: "/src/assets/nuclear-blast.jpg",
+            alt: "Nuclear blast graphic"
           }}
         />
       </Career>
