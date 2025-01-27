@@ -75,9 +75,9 @@ const FadingBackground: React.FC<FadingBackgroundProps> = ({
       <div
         ref={divRef}
         className={`
+          ${text !== "" ? " text-transparent font-mono bg-clip-text font-black text-[23vw] transform scale-x-[0.4] -translate-x-1/2 -translate-y-1/2" : ""}
           absolute
           ${className}
-          ${text !== "" ? "text-transparent bg-clip-text" : ""}
         `}
         style={style}
       >

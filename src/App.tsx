@@ -1,5 +1,5 @@
 import Career from "./components/Career";
-import CareerOverview from "./components/CareerOverview";
+import Overview from "./components/Overview";
 import GitHubActivityCalendar from "./components/GitHubActivityCalendar";
 import SplashPage from "./components/SplashPage";
 import TechStackBarChart from "./components/TechStackBarChart";
@@ -15,8 +15,9 @@ const App = () => {
       "
     >
       <SplashPage />
+      <Overview />
       <Career />
-        <CareerOverview />
+        <Overview />
         <TechStackBarChart />
         <GitHubActivityCalendar />
       <Career />
