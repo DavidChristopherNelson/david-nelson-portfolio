@@ -13,9 +13,10 @@ interface Typography {
 
 interface TextInfo {
   textInfo: Typography[],
+  backgroundText: string,
 }
 
-const Overview = ({ textInfo }: TextInfo) => {
+const Overview = ({ textInfo, backgroundText }: TextInfo) => {
   return (
     <div
       className="
@@ -27,7 +28,7 @@ const Overview = ({ textInfo }: TextInfo) => {
       {Array(10).fill(0).map((_, i) => (
         <FadingBackground
           key={i}
-          text="SOFTWAREDEVELOPER"
+          text={backgroundText}
           className="top-1/2 left-1/2"
         />
       ))}
@@ -52,7 +53,7 @@ const Overview = ({ textInfo }: TextInfo) => {
                   return (
                     <span
                       key={i}
-                      className="text-6xl font-bold"
+                      className="text-5xl font-bold"
                     >
                       {textSegment.text}
                     </span>

@@ -16,16 +16,22 @@ const App = () => {
       "
     >
       <SplashPage />
-      <Overview 
-        textInfo={
-          [
-            {type: TypographyType.Big, text: "7"}, 
-            {type: TypographyType.Double, text: "SOFTWARE PROJECTS"}, 
-            {type: TypographyType.Small, text: "over"}
-          ]
-        }
-      />
       <Career />
+        <Overview 
+          textInfo={
+            [
+              {type: TypographyType.Big, text: "7"}, 
+              {type: TypographyType.Double, text: "SOFTWARE PROJECTS"}, 
+              {type: TypographyType.Small, text: "over"},
+              {type: TypographyType.Big, text: "2"},
+              {type: TypographyType.Double, text: "YEARS EXPERIENCE"},
+              {type: TypographyType.Small, text: "at"},
+              {type: TypographyType.Big, text: "2"},
+              {type: TypographyType.Double, text: "INTERNATIONAL COMPANIES"}
+            ]
+          }
+          backgroundText="SOFTWAREDEVELOPER"
+        />
         <TechStackBarChart />
         <GitHubActivityCalendar />
       <Career />
