@@ -23,6 +23,7 @@ const Overview = ({ textInfo, backgroundText }: TextInfo) => {
         relative
         w-full
         h-[50vh]
+        my-32
       "
     >
       {Array(10).fill(0).map((_, i) => (

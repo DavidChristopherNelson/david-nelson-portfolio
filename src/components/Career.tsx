@@ -8,7 +8,6 @@ const Career = () => {
         w-full
       "
     >
-      Career
     </div>
   );
 };

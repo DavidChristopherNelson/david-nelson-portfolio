@@ -6,6 +6,29 @@ import TechStackBarChart from "./components/TechStackBarChart";
 import { TypographyType } from "./components/Overview";
 
 const App = () => {
+  const techStackList = [
+    { name: "React", frequency: 4 },
+    { name: "TailwindCSS", frequency: 3 },
+    { name: "Typescript", frequency: 3 },
+    { name: "NextJS", frequency: 2 },
+    { name: "Vercel", frequency: 2 },
+    { name: "Python", frequency: 2 },
+    { name: "Ruby", frequency: 2 },
+    { name: "Kotlin", frequency: 1 },
+    { name: "MongoDB", frequency: 1 },
+    { name: "Javascript", frequency: 1 },
+    { name: "PostgreSQL", frequency: 1 },
+    { name: "Rails", frequency: 1 },
+    { name: "Prisma", frequency: 1 },
+    { name: "Liveblocks", frequency: 1 },
+    { name: "Convex", frequency: 1 },
+    { name: "NextAuth", frequency: 1 },
+    { name: "TipTap", frequency: 1 },
+    { name: "Shadcn", frequency: 1 },
+    { name: "Clerk", frequency: 1 },
+    { name: "Applescript", frequency: 1 }
+  ];
+
   return (
     <div
       className="
@@ -32,7 +55,7 @@ const App = () => {
           }
           backgroundText="SOFTWAREDEVELOPER"
         />
-        <TechStackBarChart />
+        <TechStackBarChart techStackList={techStackList} />
         <GitHubActivityCalendar />
       <Career />
       <Career />
