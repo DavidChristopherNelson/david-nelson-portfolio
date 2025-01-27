@@ -1,6 +1,21 @@
 import FadingBackground from "./FadingBackground";
 
-function Overview () {
+export enum TypographyType {
+  Big = "big",
+  Small = "small",
+  Double = "double",
+}
+
+interface Typography {
+  type: TypographyType,
+  text: string,
+}
+
+interface TextInfo {
+  textInfo: Typography[],
+}
+
+const Overview = ({ textInfo }: TextInfo) => {
   return (
     <div
       className="
@@ -30,7 +45,44 @@ function Overview () {
           w-min 
           rounded-md
         ">
-          Hello
+          {textInfo.map((textSegment, i) => {
+            const renderTextSegment = () => {
+              switch (textSegment.type) {
+                case TypographyType.Big:
+                  return (
+                    <span
+                      key={i}
+                      className="text-6xl font-bold"
+                    >
+                      {textSegment.text}
+                    </span>
+                  );
+                case TypographyType.Small:
+                  return (
+                    <p
+                      key={i}
+                      className="px-10"
+                    >
+                      {textSegment.text}
+                    </p>
+                  );
+                case TypographyType.Double:
+                  return (
+                    <div
+                      key={i}
+                      className="text-base tracking-wide uppercase leading-tight text-left"
+                    >
+                      {textSegment.text}
+                    </div>
+                  );
+                default:
+                  return null; // Handle unexpected types explicitly
+              }
+            };
+
+            // Call renderTextSegment and return its result directly
+            return renderTextSegment();
+          })}
         </div>
       </div>
     </div>
