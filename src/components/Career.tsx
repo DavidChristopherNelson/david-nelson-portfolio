@@ -1,13 +1,19 @@
-const Career = () => {
+interface CareerProps {
+  children?: React.ReactNode;
+}
+
+const Career = ({children}: CareerProps ) => {
   return (
     <div
       className="
         flex
-        justify-center
+        flex-col
         items-center
-        w-full
+        justify-center
+        my-20
       "
     >
+      {children}
     </div>
   );
 };

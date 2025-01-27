@@ -4,6 +4,10 @@ import GitHubActivityCalendar from "./components/GitHubActivityCalendar";
 import SplashPage from "./components/SplashPage";
 import TechStackBarChart from "./components/TechStackBarChart";
 import { TypographyType } from "./components/Overview";
+import Heading from "./components/Heading";
+import ProjectLeft from "./components/ProjectLeft";
+import ProjectRight from "./components/ProjectRight";
+import { HeartOff } from "lucide-react";
 
 const App = () => {
   const techStackList = [
@@ -31,15 +35,9 @@ const App = () => {
 
   return (
     <div
-      className="
-        flex
-        flex-col
-        justify-center
-        items-center
-      "
     >
       <SplashPage />
-      <Career />
+      <Career>
         <Overview 
           textInfo={
             [
@@ -53,13 +51,195 @@ const App = () => {
               {type: TypographyType.Double, text: "INTERNATIONAL COMPANIES"}
             ]
           }
-          backgroundText="SOFTWAREDEVELOPER"
+          backgroundText="SOFTWAREDEVELOPERSOFTWAREDEVELOPERSOFTWAREDEVELOPER"
         />
+        <Heading text={"Skills"} />
         <TechStackBarChart techStackList={techStackList} />
         <GitHubActivityCalendar />
-      <Career />
-      <Career />
-      <Career />
+        <Heading text={"Projects"} />
+        <ProjectLeft 
+          heading="Google Docs Clone"
+          description="A Google Docs clone complete with a user and oranization management system, fully featured text editor and real-time multi-user collaboration."
+          buttons={[
+            {
+              href: "https://google-docs-clone-lac.vercel.app/",
+              text: "Visit Site"
+            },
+            {
+              href: "https://github.com/DavidChristopherNelson/google-doc-clone",
+              text: "Visit Repo"
+            }
+          ]}
+          imageInfo={{
+            src: "/src/assets/google-docs-clone.png",
+            alt: "Google Docs screenshot"
+          }}
+        />
+        <ProjectRight 
+          heading="Openflix"
+          description="The Netflix clone full of amazing open source video content!"
+          buttons={[
+            {
+              href: "https://github.com/DavidChristopherNelson/netflix-clone-2",
+              text: "Visit Repo"
+            }
+          ]}
+          imageInfo={{
+            src: "/src/assets/netflix-clone.png",
+            alt: "Openflix screenshot"
+          }}
+        />
+        <ProjectLeft 
+          heading="YC Job Board Scraper"
+          description="Identified the most popular web technologies used by YC companies."
+          buttons={[
+            {
+              href: "https://medium.com/@david.nelson1_80288/in-demand-the-skills-yc-companies-want-in-2024-0e0c809bd8fa",
+              text: "Visit Report"
+            },
+            {
+              href: "https://github.com/DavidChristopherNelson/tech-stack-scraper-v2",
+              text: "Visit Repo"
+            }
+          ]}
+          imageInfo={{
+            src: "/src/assets/scraper.png",
+            alt: "Scraper Blog screenshot"
+          }}
+        />
+        <ProjectRight 
+          heading="Dubber: Full Stack Developer"
+          description="
+            I worked at Dubber for 1 year during which time 'Notes by Dubber' 
+            was launched into the app store. I was personally responsible for 
+            removing half the clicks required for customers to add the product 
+            to a meeting.
+          "
+          buttons={[
+            {
+              href: "https://www.dubber.net/",
+              text: "Visit Dubber"
+            }
+          ]}
+          imageInfo={{
+            src: "/src/assets/dubber.png",
+            alt: "Dubber screenshot"
+          }}
+        />
+        <ProjectLeft 
+          heading="DeckNetwork: Junior Full Stack Developer"
+          description="            
+            I worked at DecoNetwork for one year during which time I developed 
+            and load tested ErrorMaster an error management software.
+          "
+          buttons={[
+            {
+              href: "https://github.com/DavidChristopherNelson/error_master_v3",
+              text: "Visit Repo"
+            },
+            {
+              href: "https://www.deconetwork.com/",
+              text: "Visit DecoNetwork"
+            }
+          ]}
+          imageInfo={{
+            src: "/src/assets/deconetwork.png",
+            alt: "DecoNetwork screenshot"
+          }}
+        />
+      </Career>
+
+      <Career>
+        <Overview 
+          textInfo={
+            [
+              {type: TypographyType.Big, text: "1"}, 
+              {type: TypographyType.Double, text: "PHYSICS DEGREE"}, 
+              {type: TypographyType.Small, text: "and"},
+              {type: TypographyType.Big, text: "1"},
+              {type: TypographyType.Double, text: "ENGINEERING DEGREE"},
+              {type: TypographyType.Small, text: "and"},
+              {type: TypographyType.Big, text: "1"},
+              {type: TypographyType.Double, text: "PROGRAMMING BOOTCAMP"}
+            ]
+          }
+          backgroundText="EDUCATIONEDUCATIONEDUCATION"
+        />
+        <ProjectRight 
+          heading="Chemical Engineering and Physics Degrees"
+          description="
+            I graduated with Class 2A honors and a GPA of 5.5/7 from the University 
+            of Queensland (40th world ranking).
+          "
+          buttons={[
+            {
+              href: "https://www.dropbox.com/scl/fi/y0z6d3l49tjjtlt913wjz/Official_Transcript_s4266377.pdf?rlkey=jcz5a5f46w7j0lyozwgwtsget&dl=0",
+              text: "View Transcript"
+            }
+          ]}
+          imageInfo={{
+            src: "/src/assets/uq.png",
+            alt: "UQ photo"
+          }}
+        />
+        <ProjectLeft 
+          heading="Launch School Programming Bootcamp"
+          description="            
+            I partially completed the Launch School mastery based programming 
+            bootcamp achieving an average grade of A+. Launch School has an 
+            average graduate salary of $116K/year.
+          "
+          buttons={[
+            {
+              href: "https://launchschool.com/",
+              text: "Visit Launch School"
+            },
+            {
+              href: "https://www.dropbox.com/scl/fi/o5pto2hb0df5ceseb57eg/Launch-School-Transcript.pdf?rlkey=n9eep0lu17qm4zhf3opa3neel&dl=0",
+              text: "View Transcript"
+            }
+          ]}
+          imageInfo={{
+            src: "/src/assets/launch-school.png",
+            alt: "Launch School screenshot"
+          }}
+        />
+      </Career>
+
+      <Career>
+        <Overview 
+          textInfo={
+            [
+              {type: TypographyType.Big, text: "$100K"}, 
+              {type: TypographyType.Double, text: "MONEY RAISED"}, 
+              {type: TypographyType.Small, text: "through"},
+              {type: TypographyType.Big, text: "2"},
+              {type: TypographyType.Double, text: "ACCELERATOR PROGRAMS"},
+              {type: TypographyType.Small, text: "creating"},
+              {type: TypographyType.Big, text: "3"},
+              {type: TypographyType.Double, text: "REVENUEGENERATING BUSINESSES"}
+            ]
+          }
+          backgroundText="ENTREPRENEURSHIPENTREPRENEURSHIPENTREPRENEURSHIP"
+        />
+        <ProjectLeft 
+          heading="Homecube"
+          description="            
+            Developing the world's first council approved house that can be 
+            constructed by anyone without any tools. 
+          "
+          buttons={[
+            {
+              href: "https://www.dropbox.com/scl/fi/mq5udjprm9i8qxlbculfs/Homecube-Founder-Video.mov?rlkey=gv6eodlcycpd1efm91xoipz2w&dl=0",
+              text: "View Video"
+            }
+          ]}
+          imageInfo={{
+            src: "/src/assets/homecube.png",
+            alt: "Homecube rendering"
+          }}
+        />
+      </Career>
     </div>
   );
 };

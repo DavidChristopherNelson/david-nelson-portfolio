@@ -63,8 +63,10 @@ const SplashPage = () => {
             <p
               className="text-2xl"
             >
+              <br />
               US and Australian Citizen<br />
               <br />
+              
               Previous Software Engineer at Dubber and DecoNetwork.<br />
               Degrees in Chemical Engineering and Physics.<br />
               Raised over $100,000 in funding for my startups.<br />

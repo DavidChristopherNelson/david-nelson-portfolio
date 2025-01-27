@@ -12,12 +12,7 @@ const TechStackBarChart = ({ techStackList }: TechStackBarChartProps) => {
 
   return (
     <>
-      <div
-          className="text-9xl font-black text-[#008080]"
-        >
-          Skills
-      </div>
-      <div className="relative w-full pl-36 h-[300px] mb-32">
+      <div className="relative w-full pl-36 h-[300px] mt-10 mb-32">
         <div
           className="
             absolute 
