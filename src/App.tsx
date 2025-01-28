@@ -7,7 +7,6 @@ import { TypographyType } from "./components/Overview";
 import Heading from "./components/Heading";
 import ProjectLeft from "./components/ProjectLeft";
 import ProjectRight from "./components/ProjectRight";
-import { HeartOff } from "lucide-react";
 
 const App = () => {
   const techStackList = [
