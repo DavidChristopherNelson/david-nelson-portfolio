@@ -8,6 +8,16 @@ import Heading from "./components/Heading";
 import ProjectLeft from "./components/ProjectLeft";
 import ProjectRight from "./components/ProjectRight";
 
+import googleDocsClone from "./assets/google-docs-clone.png";
+import netflixClone from "./assets/netflix-clone.png";
+import scraper from "./assets/scraper.png";
+import dubber from "./assets/dubber.png";
+import deconetwork from "./assets/deconetwork.png";
+import uq from "./assets/uq.png";
+import launchSchool from "./assets/launch-school.png";
+import nuclearBlast from "./assets/nuclear-blast.jpg";
+import homecube from "./assets/homecube.png";
+
 const App = () => {
   const techStackList = [
     { name: "React", frequency: 4 },
@@ -70,7 +80,7 @@ const App = () => {
             }
           ]}
           imageInfo={{
-            src: "/src/assets/google-docs-clone.png",
+            src: googleDocsClone,
             alt: "Google Docs screenshot"
           }}
         />
@@ -84,7 +94,7 @@ const App = () => {
             }
           ]}
           imageInfo={{
-            src: "/src/assets/netflix-clone.png",
+            src: netflixClone,
             alt: "Openflix screenshot"
           }}
         />
@@ -102,7 +112,7 @@ const App = () => {
             }
           ]}
           imageInfo={{
-            src: "/src/assets/scraper.png",
+            src: scraper,
             alt: "Scraper Blog screenshot"
           }}
         />
@@ -121,7 +131,7 @@ const App = () => {
             }
           ]}
           imageInfo={{
-            src: "/src/assets/dubber.png",
+            src: dubber,
             alt: "Dubber screenshot"
           }}
         />
@@ -142,7 +152,7 @@ const App = () => {
             }
           ]}
           imageInfo={{
-            src: "/src/assets/deconetwork.png",
+            src: deconetwork,
             alt: "DecoNetwork screenshot"
           }}
         />
@@ -177,7 +187,7 @@ const App = () => {
             }
           ]}
           imageInfo={{
-            src: "/src/assets/uq.png",
+            src: uq,
             alt: "UQ photo"
           }}
         />
@@ -199,7 +209,7 @@ const App = () => {
             }
           ]}
           imageInfo={{
-            src: "/src/assets/launch-school.png",
+            src: launchSchool,
             alt: "Launch School screenshot"
           }}
         />
@@ -217,7 +227,7 @@ const App = () => {
             }
           ]}
           imageInfo={{
-            src: "/src/assets/nuclear-blast.jpg",
+            src: nuclearBlast,
             alt: "Nuclear blast graphic"
           }}
         />
@@ -252,7 +262,7 @@ const App = () => {
             }
           ]}
           imageInfo={{
-            src: "/src/assets/homecube.png",
+            src: homecube,
             alt: "Homecube rendering"
           }}
         />
