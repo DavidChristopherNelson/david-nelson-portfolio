@@ -136,7 +136,7 @@ const App = () => {
           }}
         />
         <ProjectLeft 
-          heading="DeckNetwork: Junior Full Stack Developer"
+          heading="DecoNetwork: Junior Full Stack Developer"
           description="            
             I worked at DecoNetwork for one year, during which I developed and 
             performed load testing on ErrorMaster, an error management tool.
