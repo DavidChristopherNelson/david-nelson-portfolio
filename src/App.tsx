@@ -19,9 +19,10 @@ import uq from "./assets/uq.png";
 import launchSchool from "./assets/launch-school.png";
 import nuclearBlast from "./assets/nuclear-blast.jpg";
 import homecube from "./assets/homecube.png";
+import MobileSplashPage from "./components/mobileSplashPage";
 
 const App = () => {
-  const { setIsMobileScreen } = useIsMobileScreenStore();
+  const { isMobileScreen, setIsMobileScreen } = useIsMobileScreenStore();
   useEffect(() => {
     const handleResize = () => {
       setIsMobileScreen(window.innerWidth < 640);
@@ -60,7 +61,7 @@ const App = () => {
   return (
     <div
     >
-      <SplashPage />
+      { isMobileScreen ? <MobileSplashPage /> : <SplashPage /> }
       <Career>
         <Overview 
           textInfo={
