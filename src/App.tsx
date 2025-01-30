@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Career from "./components/Career";
 import Overview from "./components/Overview";
 import GitHubActivityCalendar from "./components/GitHubActivityCalendar";
@@ -7,6 +8,7 @@ import { TypographyType } from "./components/Overview";
 import Heading from "./components/Heading";
 import ProjectLeft from "./components/ProjectLeft";
 import ProjectRight from "./components/ProjectRight";
+import { useIsMobileScreenStore } from './store/is_mobile_screen_store';
 
 import googleDocsClone from "./assets/google-docs-clone.png";
 import netflixClone from "./assets/netflix-clone.png";
@@ -19,6 +21,19 @@ import nuclearBlast from "./assets/nuclear-blast.jpg";
 import homecube from "./assets/homecube.png";
 
 const App = () => {
+  const { setIsMobileScreen } = useIsMobileScreenStore();
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileScreen(window.innerWidth < 640);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [setIsMobileScreen]);
+
   const techStackList = [
     { name: "React", frequency: 4 },
     { name: "TailwindCSS", frequency: 3 },
