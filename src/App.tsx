@@ -69,7 +69,7 @@ const App = () => {
               {type: TypographyType.Big, text: "7"}, 
               {type: TypographyType.Double, text: "SOFTWARE PROJECTS"}, 
               {type: TypographyType.Small, text: "over"},
-              {type: TypographyType.Big, text: "2"},
+              {type: TypographyType.Big, text: "3"},
               {type: TypographyType.Double, text: "YEARS EXPERIENCE"},
               {type: TypographyType.Small, text: "at"},
               {type: TypographyType.Big, text: "2"},
@@ -78,9 +78,9 @@ const App = () => {
           }
           backgroundText="SOFTWAREDEVELOPERSOFTWAREDEVELOPERSOFTWAREDEVELOPER"
         />
-        <Heading text={"Skills"} />
-        <TechStackBarChart techStackList={techStackList} />
-        <GitHubActivityCalendar />
+        { !isMobileScreen && <Heading text={"Skills"} /> }
+        { !isMobileScreen && <TechStackBarChart techStackList={techStackList} /> }
+        { !isMobileScreen && <GitHubActivityCalendar /> }
         <Heading text={"Projects"} />
         <ProjectLeft 
           heading="Google Docs Clone"

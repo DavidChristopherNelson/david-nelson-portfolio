@@ -1,4 +1,5 @@
 import FadingBackground from "./FadingBackground";
+import { useIsMobileScreenStore } from '../store/is_mobile_screen_store';
 
 export enum TypographyType {
   Big = "big",
@@ -17,6 +18,8 @@ interface TextInfo {
 }
 
 const Overview = ({ textInfo, backgroundText }: TextInfo) => {
+  const { isMobileScreen } = useIsMobileScreenStore();
+
   return (
     <div
       className="
@@ -26,19 +29,68 @@ const Overview = ({ textInfo, backgroundText }: TextInfo) => {
         my-32
       "
     >
-      {Array(10).fill(0).map((_, i) => (
-        <FadingBackground
-          key={i}
-          text={backgroundText}
-          className="top-1/2 left-1/2"
-        />
-      ))}
+      {isMobileScreen ? (
+        <>
+          {Array(10).fill(0).map((_, i) => (
+            <FadingBackground
+              key={i}
+              text={backgroundText}
+              className="top left-1/4"
+            />
+          ))}
+          
+          {Array(10).fill(0).map((_, i) => (
+            <FadingBackground
+              key={i}
+              text={backgroundText}
+              className="top-1/4 left-1/4"
+            />
+          ))}
+
+          {Array(10).fill(0).map((_, i) => (
+            <FadingBackground
+              key={i}
+              text={backgroundText}
+              className="top-1/2 left-1/4"
+            />
+          ))}
+
+          {Array(10).fill(0).map((_, i) => (
+            <FadingBackground
+              key={i}
+              text={backgroundText}
+              className="top-3/4 left-1/4"
+            />
+          ))}
+
+          {Array(10).fill(0).map((_, i) => (
+            <FadingBackground
+              key={i}
+              text={backgroundText}
+              className="top-full left-1/4"
+            />
+          ))}
+        </>
+      ) : (
+        <>
+          {Array(10).fill(0).map((_, i) => (
+            <FadingBackground
+              key={i}
+              text={backgroundText}
+              className="top-1/2 left-1/2"
+            />
+          ))}
+        </>
+      )}
+
       <div className="flex justify-center items-center w-full h-full">
         <div className="
           bg-gray-800/70 
           backdrop-blur-md 
           text-white 
-          flex 
+          flex
+          flex-col
+          sm:flex-row
           justify-center 
           items-center 
           px-24 
@@ -63,7 +115,7 @@ const Overview = ({ textInfo, backgroundText }: TextInfo) => {
                   return (
                     <p
                       key={i}
-                      className="px-10"
+                      className="px-10 py-5 sm:py-0"
                     >
                       {textSegment.text}
                     </p>
@@ -72,7 +124,7 @@ const Overview = ({ textInfo, backgroundText }: TextInfo) => {
                   return (
                     <div
                       key={i}
-                      className="text-base tracking-wide uppercase leading-tight text-left"
+                      className="text-base tracking-wide uppercase leading-tight sm:text-left"
                     >
                       {textSegment.text}
                     </div>
