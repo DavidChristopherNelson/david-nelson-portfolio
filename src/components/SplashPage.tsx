@@ -89,10 +89,10 @@ const SplashPage = () => {
               key={i}
               className=" "
               style={{
-                top: `${Math.floor(0.20 * imgWidth)}px`,
-                right: `${Math.floor(0.33 * imgWidth)}px`,
-                width: `${Math.floor(0.2 * imgWidth)}px`,
-                height: `${Math.floor(0.5 * imgWidth)}px`,
+                top: `${Math.floor(0.20 * window.innerHeight)}px`,
+                right: `${Math.floor(0.33 * window.innerHeight)}px`,
+                width: `${Math.floor(0.2 * window.innerHeight)}px`,
+                height: `${Math.floor(0.5 * window.innerHeight)}px`,
               }}
             />
           ))}
