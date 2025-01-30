@@ -1,16 +1,11 @@
-import { useState, useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import profilePicture from '../assets/profile-picture.png';
 import FadingBackground from './FadingBackground';
+import { useIsMobileScreenStore } from '../store/is_mobile_screen_store';
 
 const SplashPage = () => {
-  const [imgWidth, setImgWidth] = useState<number>(0);
   const imgRef = useRef<HTMLImageElement>(null);
-
-  useEffect(() => {
-    if (imgRef.current) {
-      setImgWidth(imgRef.current.offsetWidth);
-    }
-  }, []);
+  const { isMobileScreen } = useIsMobileScreenStore();
 
   return(
     <>
@@ -34,34 +29,54 @@ const SplashPage = () => {
             items-center
           "
         >
+        
           <div
-            className="
-              p-20
+            className={`
+              w-screen
               relative
               z-10
-            "
+              ${ isMobileScreen && 'flex flex-col items-center justify-center'}  
+            `}
           >
+            { isMobileScreen &&
+              <img
+                src={profilePicture}
+                alt="Example Image"
+                className="
+                  h-56 w-56 
+                  mb-20
+                  rounded-full
+                  bg-black
+                  translate-x-100
+                "
+              />
+            }
             <h1 
-              className="
-                text-[12rem] 
+              className={`
+                text-[4rem]
+                sm:text-[12rem] 
                 font-mono 
-                -translate-x-3
+                sm:-translate-x-3
                 leading-[0.9]
-              "
+              `}
             >
               David
             </h1>
             <h1 
-              className="
-                text-[12rem] 
+              className={`
+                text-[4rem]
+                sm:text-[12rem] 
                 font-mono 
                 leading-[0.9]
-              "
+              `}
             >
               Nelson
             </h1>
             <p
-              className="text-2xl"
+              className={`
+                text-2xl
+                ${ isMobileScreen && 'flex flex-col items-center justify-center'}
+              `}
             >
               <br />
               US and Australian Citizen<br />
@@ -72,6 +87,11 @@ const SplashPage = () => {
               Raised over $100,000 in funding for my startups.<br />
               <br />
               hello@davidnelson.bio<br />
+            </p>
+            <p
+              className="text-transparent"
+            >
+              {String(isMobileScreen)}
             </p>
           </div>
           {Array(10).fill(0).map((_, i) => (
@@ -90,10 +110,10 @@ const SplashPage = () => {
               key={i}
               className=" "
               style={{
-                top: `${Math.floor(0.20 * imgWidth)}px`,
-                right: `${Math.floor(0.33 * imgWidth)}px`,
-                width: `${Math.floor(0.2 * imgWidth)}px`,
-                height: `${Math.floor(0.5 * imgWidth)}px`,
+                top: `${Math.floor(0.20 * window.innerHeight)}px`,
+                right: `${Math.floor(0.33 * window.innerHeight)}px`,
+                width: `${Math.floor(0.2 * window.innerHeight)}px`,
+                height: `${Math.floor(0.5 * window.innerHeight)}px`,
               }}
             />
           ))}
