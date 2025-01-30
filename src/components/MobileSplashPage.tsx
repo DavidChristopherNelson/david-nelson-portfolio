@@ -84,7 +84,7 @@ const SplashPage = () => {
               Degrees in Chemical Engineering and Physics.<br />
               Raised over $100,000 in funding for my startups.<br />
               <br />
-              hello@davidnelson.bio<br />
+              david.nelson1@uqconnect.edu.au<br />
             </p>
             <p
               className="text-transparent"

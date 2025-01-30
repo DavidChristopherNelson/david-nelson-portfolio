@@ -1,15 +1,9 @@
-import { useState, useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import profilePicture from '../assets/profile-picture.png';
 import FadingBackground from './FadingBackground';
 
 const SplashPage = () => {
-  const [imgWidth, setImgWidth] = useState<number>(0);
   const imgRef = useRef<HTMLImageElement>(null);
-  useEffect(() => {
-    if (imgRef.current) {
-      setImgWidth(imgRef.current.offsetWidth);
-    }
-  }, []);
 
   return(
     <>
@@ -70,7 +64,7 @@ const SplashPage = () => {
               Degrees in Chemical Engineering and Physics.<br />
               Raised over $100,000 in funding for my startups.<br />
               <br />
-              hello@davidnelson.bio<br />
+              david.nelson1@uqconnect.edu.au<br />
             </p>
           </div>
           {Array(10).fill(0).map((_, i) => (
