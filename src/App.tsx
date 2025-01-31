@@ -19,9 +19,8 @@ import uq from "./assets/uq.png";
 import launchSchool from "./assets/launch-school.png";
 import nuclearBlast from "./assets/nuclear-blast.jpg";
 import homecube from "./assets/homecube.png";
-import MobileSplashPage from "./components/mobileSplashPage";
+import MobileSplashPage from "./components/MobileSplashPage";
 import MobileProject from "./components/MobileProject";
-import MobileTechStack from "./components/MobileTechStack";
 
 const App = () => {
   const { isMobileScreen, setIsMobileScreen } = useIsMobileScreenStore();
