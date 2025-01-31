@@ -21,6 +21,7 @@ import nuclearBlast from "./assets/nuclear-blast.jpg";
 import homecube from "./assets/homecube.png";
 import MobileSplashPage from "./components/mobileSplashPage";
 import MobileProject from "./components/MobileProject";
+import MobileTechStack from "./components/MobileTechStack";
 
 const App = () => {
   const { isMobileScreen, setIsMobileScreen } = useIsMobileScreenStore();
@@ -192,6 +193,10 @@ const App = () => {
       {
         href: "https://www.mdpi.com/2673-8783/4/2/33",
         text: "View Paper"
+      },
+      { 
+        href: "https://github.com/DavidChristopherNelson/wood_gasification_paper",
+        text: "View Repository"
       }
     ],
     imageInfo: {
@@ -240,23 +245,23 @@ const App = () => {
         { !isMobileScreen && <TechStackBarChart techStackList={techStackList} /> }
         { !isMobileScreen && <GitHubActivityCalendar /> }
         <Heading text={"Projects"} />
-        {isMobileScreen ? 
+        { isMobileScreen ? 
           <MobileProject {...googleProjectParams} /> : 
           <ProjectLeft {...googleProjectParams} />
         }
-        {isMobileScreen ? 
+        { isMobileScreen ? 
           <MobileProject {...openflixProjectParams} /> : 
           <ProjectRight {...openflixProjectParams} />
         }
-        {isMobileScreen ? 
+        { isMobileScreen ? 
           <MobileProject {...scraperProjectParams} /> : 
           <ProjectLeft {...scraperProjectParams} />
         }
-        {isMobileScreen ? 
+        { isMobileScreen ? 
           <MobileProject {...dubberProjectParams} /> : 
           <ProjectRight {...dubberProjectParams} />
         }
-        {isMobileScreen ? 
+        { isMobileScreen ? 
           <MobileProject {...decoNetworkProjectParams} /> : 
           <ProjectLeft {...decoNetworkProjectParams} />
         }
@@ -279,15 +284,15 @@ const App = () => {
           backgroundText="EDUCATIONEDUCATIONEDUCATION"
         />
 
-        {isMobileScreen ? 
+        { isMobileScreen ? 
           <MobileProject {...uqProjectParams} /> : 
           <ProjectRight {...uqProjectParams} />
         }
-        {isMobileScreen ? 
+        { isMobileScreen ? 
           <MobileProject {...launchProjectParams} /> : 
           <ProjectLeft {...launchProjectParams} />
         }
-        {isMobileScreen ? 
+        { isMobileScreen ? 
           <MobileProject {...researchProjectParams} /> : 
           <ProjectRight {...researchProjectParams} />
         }
@@ -309,7 +314,7 @@ const App = () => {
           }
           backgroundText="ENTREPRENEURSHIPENTREPRENEURSHIPENTREPRENEURSHIP"
         />
-        {isMobileScreen ? 
+        { isMobileScreen ? 
           <MobileProject {...homecubeProjectParams} /> : 
           <ProjectLeft {...homecubeProjectParams} />
         }
