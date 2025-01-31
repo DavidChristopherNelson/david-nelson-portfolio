@@ -20,6 +20,7 @@ import launchSchool from "./assets/launch-school.png";
 import nuclearBlast from "./assets/nuclear-blast.jpg";
 import homecube from "./assets/homecube.png";
 import MobileSplashPage from "./components/mobileSplashPage";
+import MobileProject from "./components/MobileProject";
 
 const App = () => {
   const { isMobileScreen, setIsMobileScreen } = useIsMobileScreenStore();
@@ -58,6 +59,163 @@ const App = () => {
     { name: "Applescript", frequency: 1 }
   ];
 
+  const googleProjectParams = {
+    heading: "Google Docs Clone",
+    description: "A Google Docs clone complete with a user and organization management system, fully featured text editor and real-time multi-user collaboration.",
+    buttons: [
+      {
+        href: "https://google-docs-clone-lac.vercel.app/",
+        text: "Visit Site"
+      },
+      {
+        href: "https://github.com/DavidChristopherNelson/google-doc-clone",
+        text: "Visit Repo"
+      }
+    ],
+    imageInfo: {
+      src: googleDocsClone,
+      alt: "Google Docs screenshot"
+    }
+  };
+
+  const openflixProjectParams = {
+    heading: "Openflix",
+    description: "The Netflix clone full of amazing open-source video content!",
+    buttons: [
+      {
+        href: "https://github.com/DavidChristopherNelson/netflix-clone-2",
+        text: "Visit Repo"
+      }
+    ],
+    imageInfo: {
+      src: netflixClone,
+      alt: "Openflix screenshot"
+    }
+  };
+  
+  const scraperProjectParams = {
+    heading: "YC Job Board Scraper",
+    description: "Identified the most popular web technologies used by YC companies.",
+    buttons: [
+      {
+        href: "https://medium.com/@david.nelson1_80288/in-demand-the-skills-yc-companies-want-in-2024-0e0c809bd8fa",
+        text: "Visit Report"
+      },
+      {
+        href: "https://github.com/DavidChristopherNelson/tech-stack-scraper-v2",
+        text: "Visit Repo"
+      }
+    ],
+    imageInfo: {
+      src: scraper,
+      alt: "Scraper Blog screenshot"
+    }
+  };
+  
+  const dubberProjectParams = {
+    heading: "Dubber: Full Stack Developer",
+    description:
+      "I worked at Dubber for 1 year during which time 'Notes by Dubber' was launched into the app store. I was personally responsible for removing half the clicks required for customers to add the product to a meeting.",
+    buttons: [
+      {
+        href: "https://www.dubber.net/",
+        text: "Visit Dubber"
+      }
+    ],
+    imageInfo: {
+      src: dubber,
+      alt: "Dubber screenshot"
+    }
+  };
+  
+  const decoNetworkProjectParams = {
+    heading: "DecoNetwork: Junior Full Stack Developer",
+    description:
+      "I worked at DecoNetwork for one year, during which I developed and performed load testing on ErrorMaster, an error management tool.",
+    buttons: [
+      {
+        href: "https://github.com/DavidChristopherNelson/error_master_v3",
+        text: "Visit Repo"
+      },
+      {
+        href: "https://www.deconetwork.com/",
+        text: "Visit DecoNetwork"
+      }
+    ],
+    imageInfo: {
+      src: deconetwork,
+      alt: "DecoNetwork screenshot"
+    }
+  };
+  
+  const uqProjectParams = {
+    heading: "Chemical Engineering and Physics Degrees",
+    description:
+      "I graduated with Class 2A honors and a GPA of 5.5/7 from the University of Queensland (40th world ranking).",
+    buttons: [
+      {
+        href: "https://www.dropbox.com/scl/fi/y0z6d3l49tjjtlt913wjz/Official_Transcript_s4266377.pdf?rlkey=jcz5a5f46w7j0lyozwgwtsget&dl=0",
+        text: "View Transcript"
+      }
+    ],
+    imageInfo: {
+      src: uq,
+      alt: "UQ photo"
+    }
+  };
+  
+  const launchProjectParams = {
+    heading: "Launch School Programming Bootcamp",
+    description:
+      "I partially completed the Launch School mastery-based programming bootcamp achieving an average grade of A+. Launch School has an average graduate salary of $116K/year.",
+    buttons: [
+      {
+        href: "https://launchschool.com/",
+        text: "Visit Launch School"
+      },
+      {
+        href: "https://www.dropbox.com/scl/fi/o5pto2hb0df5ceseb57eg/Launch-School-Transcript.pdf?rlkey=n9eep0lu17qm4zhf3opa3neel&dl=0",
+        text: "View Transcript"
+      }
+    ],
+    imageInfo: {
+      src: launchSchool,
+      alt: "Launch School screenshot"
+    }
+  };
+  
+  const researchProjectParams = {
+    heading: "Research Paper",
+    description:
+      "As a paid research assistant at the University of Canterbury, I published a mechanical engineering paper on how to ensure everyone is fed during a nuclear winter.",
+    buttons: [
+      {
+        href: "https://www.mdpi.com/2673-8783/4/2/33",
+        text: "View Paper"
+      }
+    ],
+    imageInfo: {
+      src: nuclearBlast,
+      alt: "Nuclear blast graphic"
+    }
+  };
+
+  const homecubeProjectParams = {
+    heading: "Homecube",
+    description:
+      "Developing the world's first council-approved house that can be constructed by anyone without any tools.",
+    buttons: [
+      {
+        href: "https://www.dropbox.com/scl/fi/mq5udjprm9i8qxlbculfs/Homecube-Founder-Video.mov?rlkey=gv6eodlcycpd1efm91xoipz2w&dl=0",
+        text: "View Video"
+      }
+    ],
+    imageInfo: {
+      src: homecube,
+      alt: "Homecube rendering"
+    }
+  };  
+  
   return (
     <div
     >
@@ -69,7 +227,7 @@ const App = () => {
               {type: TypographyType.Big, text: "7"}, 
               {type: TypographyType.Double, text: "SOFTWARE PROJECTS"}, 
               {type: TypographyType.Small, text: "over"},
-              {type: TypographyType.Big, text: "3"},
+              {type: TypographyType.Big, text: "2"},
               {type: TypographyType.Double, text: "YEARS EXPERIENCE"},
               {type: TypographyType.Small, text: "at"},
               {type: TypographyType.Big, text: "2"},
@@ -82,96 +240,26 @@ const App = () => {
         { !isMobileScreen && <TechStackBarChart techStackList={techStackList} /> }
         { !isMobileScreen && <GitHubActivityCalendar /> }
         <Heading text={"Projects"} />
-        <ProjectLeft 
-          heading="Google Docs Clone"
-          description="A Google Docs clone complete with a user and oranization management system, fully featured text editor and real-time multi-user collaboration."
-          buttons={[
-            {
-              href: "https://google-docs-clone-lac.vercel.app/",
-              text: "Visit Site"
-            },
-            {
-              href: "https://github.com/DavidChristopherNelson/google-doc-clone",
-              text: "Visit Repo"
-            }
-          ]}
-          imageInfo={{
-            src: googleDocsClone,
-            alt: "Google Docs screenshot"
-          }}
-        />
-        <ProjectRight 
-          heading="Openflix"
-          description="The Netflix clone full of amazing open source video content!"
-          buttons={[
-            {
-              href: "https://github.com/DavidChristopherNelson/netflix-clone-2",
-              text: "Visit Repo"
-            }
-          ]}
-          imageInfo={{
-            src: netflixClone,
-            alt: "Openflix screenshot"
-          }}
-        />
-        <ProjectLeft 
-          heading="YC Job Board Scraper"
-          description="Identified the most popular web technologies used by YC companies."
-          buttons={[
-            {
-              href: "https://medium.com/@david.nelson1_80288/in-demand-the-skills-yc-companies-want-in-2024-0e0c809bd8fa",
-              text: "Visit Report"
-            },
-            {
-              href: "https://github.com/DavidChristopherNelson/tech-stack-scraper-v2",
-              text: "Visit Repo"
-            }
-          ]}
-          imageInfo={{
-            src: scraper,
-            alt: "Scraper Blog screenshot"
-          }}
-        />
-        <ProjectRight 
-          heading="Dubber: Full Stack Developer"
-          description="
-            I worked at Dubber for 1 year during which time 'Notes by Dubber' 
-            was launched into the app store. I was personally responsible for 
-            removing half the clicks required for customers to add the product 
-            to a meeting.
-          "
-          buttons={[
-            {
-              href: "https://www.dubber.net/",
-              text: "Visit Dubber"
-            }
-          ]}
-          imageInfo={{
-            src: dubber,
-            alt: "Dubber screenshot"
-          }}
-        />
-        <ProjectLeft 
-          heading="DecoNetwork: Junior Full Stack Developer"
-          description="            
-            I worked at DecoNetwork for one year, during which I developed and 
-            performed load testing on ErrorMaster, an error management tool.
-          "
-          buttons={[
-            {
-              href: "https://github.com/DavidChristopherNelson/error_master_v3",
-              text: "Visit Repo"
-            },
-            {
-              href: "https://www.deconetwork.com/",
-              text: "Visit DecoNetwork"
-            }
-          ]}
-          imageInfo={{
-            src: deconetwork,
-            alt: "DecoNetwork screenshot"
-          }}
-        />
+        {isMobileScreen ? 
+          <MobileProject {...googleProjectParams} /> : 
+          <ProjectLeft {...googleProjectParams} />
+        }
+        {isMobileScreen ? 
+          <MobileProject {...openflixProjectParams} /> : 
+          <ProjectRight {...openflixProjectParams} />
+        }
+        {isMobileScreen ? 
+          <MobileProject {...scraperProjectParams} /> : 
+          <ProjectLeft {...scraperProjectParams} />
+        }
+        {isMobileScreen ? 
+          <MobileProject {...dubberProjectParams} /> : 
+          <ProjectRight {...dubberProjectParams} />
+        }
+        {isMobileScreen ? 
+          <MobileProject {...decoNetworkProjectParams} /> : 
+          <ProjectLeft {...decoNetworkProjectParams} />
+        }
       </Career>
 
       <Career>
@@ -190,63 +278,19 @@ const App = () => {
           }
           backgroundText="EDUCATIONEDUCATIONEDUCATION"
         />
-        <ProjectRight 
-          heading="Chemical Engineering and Physics Degrees"
-          description="
-            I graduated with Class 2A honors and a GPA of 5.5/7 from the University 
-            of Queensland (40th world ranking).
-          "
-          buttons={[
-            {
-              href: "https://www.dropbox.com/scl/fi/y0z6d3l49tjjtlt913wjz/Official_Transcript_s4266377.pdf?rlkey=jcz5a5f46w7j0lyozwgwtsget&dl=0",
-              text: "View Transcript"
-            }
-          ]}
-          imageInfo={{
-            src: uq,
-            alt: "UQ photo"
-          }}
-        />
-        <ProjectLeft 
-          heading="Launch School Programming Bootcamp"
-          description="            
-            I partially completed the Launch School mastery based programming 
-            bootcamp achieving an average grade of A+. Launch School has an 
-            average graduate salary of $116K/year.
-          "
-          buttons={[
-            {
-              href: "https://launchschool.com/",
-              text: "Visit Launch School"
-            },
-            {
-              href: "https://www.dropbox.com/scl/fi/o5pto2hb0df5ceseb57eg/Launch-School-Transcript.pdf?rlkey=n9eep0lu17qm4zhf3opa3neel&dl=0",
-              text: "View Transcript"
-            }
-          ]}
-          imageInfo={{
-            src: launchSchool,
-            alt: "Launch School screenshot"
-          }}
-        />
-       <ProjectRight 
-          heading="Research Paper"
-          description="
-            As a paid research assistant at the University of Canterbury I
-            published a mechanical engineering paper on how to ensure everyone
-            is fed during a nuclear winter.
-          "
-          buttons={[
-            {
-              href: "https://www.mdpi.com/2673-8783/4/2/33",
-              text: "View Paper"
-            }
-          ]}
-          imageInfo={{
-            src: nuclearBlast,
-            alt: "Nuclear blast graphic"
-          }}
-        />
+
+        {isMobileScreen ? 
+          <MobileProject {...uqProjectParams} /> : 
+          <ProjectRight {...uqProjectParams} />
+        }
+        {isMobileScreen ? 
+          <MobileProject {...launchProjectParams} /> : 
+          <ProjectLeft {...launchProjectParams} />
+        }
+        {isMobileScreen ? 
+          <MobileProject {...researchProjectParams} /> : 
+          <ProjectRight {...researchProjectParams} />
+        }
       </Career>
 
       <Career>
@@ -265,23 +309,10 @@ const App = () => {
           }
           backgroundText="ENTREPRENEURSHIPENTREPRENEURSHIPENTREPRENEURSHIP"
         />
-        <ProjectLeft 
-          heading="Homecube"
-          description="            
-            Developing the world's first council approved house that can be 
-            constructed by anyone without any tools. 
-          "
-          buttons={[
-            {
-              href: "https://www.dropbox.com/scl/fi/mq5udjprm9i8qxlbculfs/Homecube-Founder-Video.mov?rlkey=gv6eodlcycpd1efm91xoipz2w&dl=0",
-              text: "View Video"
-            }
-          ]}
-          imageInfo={{
-            src: homecube,
-            alt: "Homecube rendering"
-          }}
-        />
+        {isMobileScreen ? 
+          <MobileProject {...homecubeProjectParams} /> : 
+          <ProjectLeft {...homecubeProjectParams} />
+        }
       </Career>
     </div>
   );
