@@ -65,7 +65,7 @@ const TechStackBarChart = ({ techStackList }: TechStackBarChartProps) => {
               <div
                 key={tech.name}
                 className="flex flex-col items-center"
-                style={{ width: `${100 / techStackList.length}%` }}
+                style={{ width: `${150 / techStackList.length}%` }}
               >
                 <div>
                   <i className={`devicon-${tech.name.toLowerCase()}-plain`}></i>
