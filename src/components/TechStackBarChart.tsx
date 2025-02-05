@@ -51,7 +51,7 @@ const TechStackBarChart = ({ techStackList }: TechStackBarChartProps) => {
             absolute 
             bottom-0 
             left-0 
-            w-[2000px] 
+            w-[2500px] 
             flex 
             items-end 
             justify-between
