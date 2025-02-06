@@ -14,7 +14,12 @@ const GitHubActivity = () => {
 
   return (
     <div className="my-4 h-96">
-      <div className="flex justify-center">
+      <div 
+        className="
+          flex 
+          justify-center
+        "
+      >
         <GitHubCalendar
           username="DavidChristopherNelson"
           theme={customTheme}
