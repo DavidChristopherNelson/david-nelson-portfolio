@@ -58,8 +58,7 @@ const App = () => {
     { name: "Shadcn", frequency: 1 },
     { name: "Clerk", frequency: 1 },
     { name: "S3", frequency: 1 },
-    { name: "Applescript", frequency: 1 },
-    { name: "Amplify", frequency: 1 }
+    { name: "Applescript", frequency: 1 }
   ];
 
   const googleProjectParams = {
