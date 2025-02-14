@@ -56,8 +56,8 @@ const App = () => {
     { name: "NextAuth", frequency: 1 },
     { name: "TipTap", frequency: 1 },
     { name: "Shadcn", frequency: 1 },
-    { name: "Clerk", frequency: 1 },
     { name: "S3", frequency: 1 },
+    { name: "Clerk", frequency: 1 },
     { name: "Applescript", frequency: 1 }
   ];
 
@@ -240,7 +240,7 @@ const App = () => {
               {type: TypographyType.Double, text: "INTERNATIONAL COMPANIES"}
             ]
           }
-          backgroundText="SOFTWAREDEVELOPERSOFTWAREDEVELOPERSOFTWAREDEVELOPER"
+          backgroundText="SOFTWAREDEVELOPER.SOFTWAREDEVELOPER.SOFTWAREDEVELOPER"
         />
         { !isMobileScreen && <Heading text={"Skills"} /> }
         { !isMobileScreen && <TechStackBarChart techStackList={techStackList} /> }
@@ -282,7 +282,7 @@ const App = () => {
               {type: TypographyType.Double, text: "PROGRAMMING BOOTCAMP"}
             ]
           }
-          backgroundText="EDUCATIONEDUCATIONEDUCATION"
+          backgroundText="EDUCATION.EDUCATION.EDUCATION"
         />
 
         { isMobileScreen ? 
@@ -313,7 +313,7 @@ const App = () => {
               {type: TypographyType.Double, text: "REVENUEGENERATING BUSINESSES"}
             ]
           }
-          backgroundText="ENTREPRENEURSHIPENTREPRENEURSHIPENTREPRENEURSHIP"
+          backgroundText="ENTREPRENEURSHIP.ENTREPRENEURSHIP.ENTREPRENEURSHIP"
         />
         { isMobileScreen ? 
           <MobileProject {...homecubeProjectParams} /> : 
