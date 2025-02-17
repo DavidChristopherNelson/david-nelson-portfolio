@@ -13,9 +13,10 @@ interface MobileProjectProps {
   description: string;
   buttons: ButtonInfo[];
   imageInfo: ImageInfo;
+  tags?: string[];
 }
 
-const MobileProject = ({heading, description, buttons, imageInfo}: MobileProjectProps) => {
+const MobileProject = ({heading, description, buttons, imageInfo, tags}: MobileProjectProps) => {
   return (
     <div
       className="flex flex-col items-center justify-center my-10"
@@ -27,6 +28,18 @@ const MobileProject = ({heading, description, buttons, imageInfo}: MobileProject
           className="w-full bg-[#008080] text-white rounded-tl-lg rounded-tr-lg p-4"
         >
           <h1 className="text-3xl font-bold">{heading}</h1>
+          <div
+              className="flex flex-row items-start w-full -mx-1"
+            >
+            {tags?.map((tag, i) => (
+                <div 
+                  key={i} 
+                  className="flex rounded-md border-2 border-[#FFD700] p-1 mx-1 mt-2 text-sm font-medium"
+                >
+                  {tag}
+              </div>
+            ))}
+          </div>
           <p className="mt-2">{description}</p>
           <div className="mt-8 flex justify-center gap-3">
             {buttons.map((buttonInfo, i) => (

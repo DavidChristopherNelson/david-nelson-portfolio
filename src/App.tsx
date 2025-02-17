@@ -63,6 +63,7 @@ const App = () => {
 
   const googleProjectParams = {
     heading: "Google Docs Clone",
+    tags: ["React", "Tailwind", "TS", "Next.js", "Vercel", "Convex"],
     description: "A Google Docs clone complete with a user and organization management system, fully featured text editor and real-time multi-user collaboration.",
     buttons: [
       {
@@ -82,6 +83,7 @@ const App = () => {
 
   const openflixProjectParams = {
     heading: "Openflix",
+    tags: ["React", "Tailwind", "TS", "Next.js", "Vercel"],
     description: "The Netflix clone full of amazing open-source video content!",
     buttons: [
       {
@@ -97,6 +99,7 @@ const App = () => {
   
   const scraperProjectParams = {
     heading: "YC Job Board Scraper",
+    tags: ["Python"],
     description: "Identified the most popular web technologies used by YC companies.",
     buttons: [
       {
@@ -116,6 +119,7 @@ const App = () => {
   
   const dubberProjectParams = {
     heading: "Dubber: Full Stack Developer",
+    tags: ["React", "PostgreSQL", "Tailwind", "Ruby", "Rails"],
     description:
       "I worked at Dubber for 1 year during which time 'Notes by Dubber' was launched into the app store. I was personally responsible for removing half the clicks required for customers to add the product to a meeting.",
     buttons: [
@@ -188,6 +192,7 @@ const App = () => {
   
   const researchProjectParams = {
     heading: "Research Paper",
+    tags: ["Python", "Monte Carlo", "Data Analysis"],
     description:
       "As a paid research assistant at the University of Canterbury, I published a mechanical engineering paper on how to ensure everyone is fed during a nuclear winter.",
     buttons: [
