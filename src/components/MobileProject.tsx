@@ -27,9 +27,9 @@ const MobileProject = ({heading, description, buttons, imageInfo, tags}: MobileP
         <div
           className="w-full bg-[#008080] text-white rounded-tl-lg rounded-tr-lg p-4"
         >
-          <h1 className="text-3xl font-bold">{heading}</h1>
+          <h1 className="text-3xl font-bold text-center">{heading}</h1>
           <div
-              className="flex flex-row items-start w-full -mx-1"
+              className="flex flex-row flex-wrap justify-center w-full -mx-1"
             >
             {tags?.map((tag, i) => (
                 <div 
@@ -40,7 +40,7 @@ const MobileProject = ({heading, description, buttons, imageInfo, tags}: MobileP
               </div>
             ))}
           </div>
-          <p className="mt-2">{description}</p>
+          <p className="mt-2 text-center">{description}</p>
           <div className="mt-8 flex justify-center gap-3">
             {buttons.map((buttonInfo, i) => (
               <a

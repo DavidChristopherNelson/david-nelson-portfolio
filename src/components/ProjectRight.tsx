@@ -38,7 +38,7 @@ const ProjectRight = ({heading, description, buttons, imageInfo, tags}: ProjectL
         >
           <h1 className="text-3xl font-bold">{heading}</h1>
           <div
-              className="flex flex-row items-start w-full -mx-1"
+              className="flex flex-row flex-wrap items-start w-full -mx-1"
             >
             {tags?.map((tag, i) => (
                 <div 
