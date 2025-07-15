@@ -56,8 +56,8 @@ const App = () => {
     { name: "Clerk", frequency: 1 },
     { name: "S3", frequency: 1 },
     { name: "Convex", frequency: 1 },
-    { name: "NextAuth", frequency: 1 },
     { name: "TipTap", frequency: 1 },
+    { name: "NextAuth", frequency: 1 },
     { name: "Applescript", frequency: 1 }
   ];
 
