@@ -94,7 +94,7 @@ const TechStackBarChart = ({ techStackList }: TechStackBarChartProps) => {
             absolute
             w-screen 
             h-full 
-            bg-gradient-to-r from-transparent from-50% to-black to-80%
+            bg-gradient-to-r from-transparent from-50% to-white to-80%
           "
         />
       </div>
