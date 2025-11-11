@@ -40,6 +40,7 @@ const SplashPage = () => {
                 font-mono 
                 -translate-x-3
                 leading-[0.9]
+                text-white
               "
             >
               David
@@ -49,12 +50,13 @@ const SplashPage = () => {
                 text-[12rem] 
                 font-mono 
                 leading-[0.9]
+                text-white
               "
             >
               Nelson
             </h1>
             <p
-              className="text-2xl"
+              className="text-2xl text-white"
             >
               <br />
               US and Australian Citizen<br />
